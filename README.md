@@ -35,7 +35,7 @@ func main() {
 go mod tidy;\
   go build -ldflags "-s -w -extldflags '-static' -X myapp.Version=beta-1.0.0" \
   -o bin/myapp \
-  -trimpath cmd/v1/main.go
+  -trimpath cmd/v1/*.go
 ```
 * Run build
 ```shell
